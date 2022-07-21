@@ -1,0 +1,11 @@
+<html>
+   <head>
+      <script type="text/javascript">
+	      function myGreetings()
+		      { alert("Have a nice Day..") }
+	  </script>
+   </head>
+   <body>
+       myGreetings()
+   </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+   <head>
+       <title>SssiT</title>
+   </head>
+   <body bgcolor="green" text="white">
+        <h1 align="center"> 
+		SSSIT Computer Education </h1>
+		<h2 align=center>Kphb - Hyderabad </h2>
+
+		<hr size="5" color="white" width="100%" align="center">
+
+        <h2> Course Details </h2>
+		<h3> Pro.Languages
+		   <ol type="1">
+		       <li> Python </li>
+			   <li> Java </li>
+			   <li> C++ </li>
+		   </ol>
+		   <br> Non Prg 
+		   <ol type="1">
+		       <li> Ms-Office </li>
+			   <li> Tally </li>
+			   <li> AutoCAD </li>
+		   </ul>
+		</h3>
+
+
+   </body>
+</html>
+

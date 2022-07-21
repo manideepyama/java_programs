@@ -1,0 +1,32 @@
+<html>
+   <body bgcolor=green text=white>
+   <form action="ImagesDemo.html" method="post" onSubmit="return(validate())">
+
+	       <pre>
+		   <h2>
+                 Enter Username :
+			   <input type=text id=UN>
+			   Enter Password :
+			   <input type=text id=PW>
+			   <input type=submit value=login>
+		   </pre>
+
+      </form>
+   </body>
+   <head>
+         <script type="text/javascript">
+		      function validate(){
+	u=document.getElementById("UN").value
+	p=document.getElementById("PW").value
+	if(u=="" || u==null)
+	     { alert("Plz Enter Username ");
+		    return false;
+		}
+	if(p=="" || p==null)
+	    { alert("Plz Enter Password ");
+		   return false; }
+	
+	}
+		 </script>
+   </head>
+</html>

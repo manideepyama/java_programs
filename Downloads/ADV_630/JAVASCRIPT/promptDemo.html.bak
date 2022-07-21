@@ -1,0 +1,9 @@
+<html>
+   <body bgcolor=green text=white>
+       <script type="text/javascript">
+	   n=prompt("Enter u r name ")
+	   if(n!=null)
+	       { alert("Hello Mr|Mrs. "+n+" Have a nice Day")}
+	   </script>
+   </body>
+</html>

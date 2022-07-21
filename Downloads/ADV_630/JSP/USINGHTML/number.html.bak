@@ -1,0 +1,12 @@
+<html>
+   <body bgcolor=green text=white>
+      <form action="fact.jsp" method="post">
+	       <h1 align=center> Application </h1>
+		   <hr><br><br>
+		   <pre>
+		      <h1> Enter a number : <input type=text name=NO>&nbsp;&nbsp;<input type=submit value=send>
+			  </h1>
+		   </pre>
+	  </form>
+   </body>
+</html>

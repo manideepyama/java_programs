@@ -1,0 +1,244 @@
+Oracle Basics
+============
+DDL commands 
+   [Create | Alter | Truncate | Drop ]
+
+Create : 
+   * It is DDL Command 
+   
+  Syn: SQL>Create <table>  <tablename>
+           (<column_name>  <datatype>(size), ......., 
+            <column_n> );
+
+  Eg: SQL>Create table student
+                    (sno   number(3),
+                     sname varchar(10),          
+                     scity    varchar(10) );
+
+2.SQL>Select * From Tab;        
+
+3.DESC[ribe]
+   Syn: SQL>Describe  <tablename>
+             SQL>Describe   student
+
+4.ALTER 
+   * DDL COMMAND 
+   Syn: SQL>ALTER <table>  <tablename>
+                       [ADD|DROP|MODIFY]
+                       (<column>   <datatype>(size), .....);
+
+SQL> ALTER TABLE STUDENT
+  2  ADD(FNAME VARCHAR(10),PIN NUMBER(6));
+
+SQL> ALTER TABLE STUDENT
+  2  RENAME COLUMN SNAME TO STU_NAME;
+
+SQL> ALTER TABLE STUDENT
+  2  DROP COLUMN SCITY;
+
+SQL> ALTER TABLE STUDENT
+  2  DROP (SNO,PIN);
+
+Truncate :
+   Syn: SQL>Truncate <table>  <tablename>;
+     Eg:  SQL>Truncate table student;
+
+DROP :
+  Syn: SQL>Drop <table>  <tablename>;
+    Eg: SQL>Drop   table   student;
+
+INSERT :
+   Syn: SQL>INSERT <into>  <tablename>
+                       <column1>,<column2>,.....,<Column n>
+                       VALUES
+                      (<value1>,<value2>,.....,<value n>);
+
+SQL> INSERT INTO STUDENT
+  2  (SNO,SCITY)
+  3  VALUES
+  4  (123,'KMM');
+
+1 row created.
+
+SQL> INSERT INTO STUDENT
+  2  VALUES
+  3  (124,'JAMES','KMM');
+
+1 row created.
+
+SQL> INSERT INTO STUDENT
+  2  VALUES
+  3  (&SNO,'&SNAME','&CITY_NAME');
+
+SELECT 
+  * DML OR DQL OR DRL COMMAND
+  * projection operator (*)
+
+SQL>SELECT [DISTINCT] <columnList|*>
+           FROM  <tablename>
+           [WHERE <condition>]
+           [GROUP BY <Column>]
+           [HAVING <Condition>]
+           [ORDER BY <Column> [DESC] ];
+
+SQL>SELECT job FROM emp;
+SQL>SELECT DISTINCT job FROM emp;
+
+For Char | Varchar Type A To Z
+For Number Type Min to Max
+For Date Previous to Present
+
+Eg: SQL>SELECT ename FROM emp
+                 ORDER By ename;
+
+      SQL>SELECT ename FROM emp
+                 ORDER by ename DESC;
+
+     SQL>SELECT ename,job,sal FROM emp
+                ORDER By 2,3;
+
+WHERE:
+   SELECT | UPDATE | DELETE 
+
+SQL>SELECT * FROM EMP
+           where JOB='MANAGER'
+           ORDER by sal DESC;
+
+Logical Operators :
+AND
+OR
+
+Functions 
+   Single Row Functions
+   Group Functions 
+        Sum( ) | Avg( ) | Min( ) | MAX ( ) | Count( ) 
+JDBC 
+   [ICURD-operations]
+             |
+           SELECT 
+               Distinct
+               Where     
+               Group By
+                   Eg: SQL>Select job,sum(sal) from emp
+                                     Group by job;
+ 
+                          SQL>Select deptno,sum(sal) from emp
+                                     Group by deptno;
+
+                          SQL>SELECT job,sum(sal) 
+                                     From emp
+                                     Where job!='MANAGER'
+                                     Group by job;
+                                     
+               Having Clause
+                     Eg: SQL>SELECT job,sum(sal)
+                                         FRom emp
+                                         Group by job
+                                         Having Sum(sal)>=4500;
+   
+                             SQL>SELECT job,sum(sal),count(job)
+                                        From emp
+                                        Group by job
+                                        Having count(job)>=3;                     
+               Order by
+
+     Nested : 
+          SQL>SELECT <ColumnList>
+                     From  <tablename(s)>
+                     [WHERE <codition> (SELECT <ColumnList>
+                                                              FROM  <tablename>
+                                                              [Where <condition>]) ];
+
+     
+    Update
+    DELETE   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

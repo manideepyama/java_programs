@@ -1,0 +1,24 @@
+<html>
+   <head>
+       <title>SssiT</title>
+   </head>
+   <body bgcolor="green" text="white">
+        <h1 align="center"> 
+		SSSIT Computer Education </h1>
+		<h2 align=center>Kphb - Hyderabad </h2>
+
+		<hr size="5" color="white" width="100%" align="center">
+
+        <h2> Facult Details </h2>
+		<h3>
+		   <ul type="circle">
+		       <li> Mr.Nagesh Babu </li>
+			   <li> Mr.Reddy </li>
+			   <li> Mrs.Sudha </li>
+		   </ul>
+		</h3>
+
+
+   </body>
+</html>
+

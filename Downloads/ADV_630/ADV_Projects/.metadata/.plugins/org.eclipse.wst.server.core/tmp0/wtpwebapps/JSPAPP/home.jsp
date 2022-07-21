@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+  <table width="100%"  height="100%">
+      <tr bgcolor="maroon"  height="20%">
+        <td><%@ include file="header.html" %></td>
+      </tr>
+      <tr bgcolor="yellow"  height="60%">
+        <td><%@ include file="login.html" %></td>
+      </tr>
+      <tr bgcolor="blue" height="20%">
+      <td><%@ include file="footer.html" %></td>
+      </tr>
+  </table>
+</body>
+</html>
+
+
+
+

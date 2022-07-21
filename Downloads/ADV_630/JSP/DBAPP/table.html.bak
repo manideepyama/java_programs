@@ -1,0 +1,14 @@
+<html>
+   <body bgcolor=green text=white>
+      <form action=data.com method=post>
+      <h1 align=center> DBApplication </h1>
+	  <hr><br><br>
+	  <table align=center>
+	     <tr><td>Enter Tablename :</td>
+		        <td><input type=text name=TABLE></td>
+				<td><input type=submit value=getData></td></tr>
+	  </table>
+
+	  </form>
+   </body>
+</html>

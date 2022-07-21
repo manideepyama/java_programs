@@ -1,0 +1,6 @@
+
+DRIVER=oracle.jdbc.driver.OracleDriver
+URL=jdbc:oracle:thin:@localhost:1521:orcl
+USERNAME=scott
+PASSWORD=tiger
+TABLE=salgrade

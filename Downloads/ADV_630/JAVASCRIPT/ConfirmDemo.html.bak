@@ -1,0 +1,11 @@
+<html>
+   <body bgcolor=green text=white>
+       <script type="text/javascript">
+var x=confirm("Do u want exit from application ")
+if(x==true)
+{ alert("U Have Selected To Quit....") }
+else
+ { alert("U Have Selected To Continue.....")  }
+	   </script>
+   </body>
+</html>

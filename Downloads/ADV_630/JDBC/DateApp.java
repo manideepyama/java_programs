@@ -1,0 +1,16 @@
+class DateApp
+{
+	public static void main(String args[])
+	{
+      java.util.Date udate=
+		  new java.util.Date();
+	  System.out.println("UtilDate : "+udate);
+           
+			long time=udate.getTime();
+			System.out.println("Time : "+time);
+
+	  java.sql.Date sdate=
+		  new java.sql.Date(time);
+	  System.out.println("SQLDate : "+sdate);
+	}
+}

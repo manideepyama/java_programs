@@ -1,0 +1,99 @@
+<html>
+   <head>
+       <title>SssiT</title>
+   </head>
+   <body background="n.jpg" text="white">
+    <form action="imageDemo.html" method="get">
+
+        <h1 align="center"> 
+		SSSIT Computer Education </h1>
+		<h2 align=center>Kphb - Hyderabad </h2>
+		<hr size="5" color="white" width="90%" align="center">
+
+		<br><br>
+		
+		<h2>
+		Enter username : <input type="text" name="USERNAME">
+
+		<!-- To Read values From Textbox Into Servlet 
+          String username =  request.getParameter("USERNAME");
+		  out.print(username);
+		-->
+
+
+		Enter Password : <input type="password" name="PASSWORD">
+
+		<!-- In Servlet 
+		String password=
+		request.getParameter("PASSWORD");
+		out.print(password);
+		-->
+         
+		 <br><br>
+		 Select Gender: 
+		 <input type="radio" name="GENDER" value="Male" >Male
+
+		 <input type="radio" name="GENDER"
+		 value="Female" Checked>Female
+
+		 <!-- In Servlet
+		 String gender=
+		 request.getParameter("GENDER");
+		 out.print(gender); 
+		 -->
+
+		 <br><br>
+		 Select U r hobbies : 
+		 <input type="checkbox" name="HOB" value="Reading">Reading
+
+		 <input type="checkbox" name="HOB" value="Eating">Eating
+
+		 <input type="checkbox" name="HOB" value="Sleeping">Sleeping
+
+<!-- In Servlet 
+  String[ ] hobbies= request.getParameterValues("HOB");
+  for(int i=0; i<hobbies.length; i++)
+       { out.print(hobbies[i]); }
+-->
+
+    <br><br>
+	Select U R Courses :
+	<select name="COURSES" multiple>
+	    <option>Java</option>
+		<option>.Net</option>
+		<option>Python</option>
+		<option>Oracle</option>
+	</select>
+
+	<!-- In Servlet 
+String[] courses=	request.getParameterValues("COURSES");
+   for(String i:courses)
+        {out.print(i); }  
+-->
+
+    <br><br>
+	<textarea name="COMMENTS" rows="5" cols="40">	</textarea>
+
+	<br><br>
+
+	 Select U R City : 
+		 <select name="CITY">
+		     <option checked>Hyderabad</option>
+			 <option>Kmm </option>
+			 <option>Vizag </option>
+			 <option>Kadapa</option>
+		 </select>
+
+		<!-- In Servlet 
+		String city=request.getParameter("CITY");
+		out.print(city); -->
+
+
+
+		 <input type="submit" value="Register">
+		 <input type="reset" value="Reset">
+		</h2>
+
+   </form>
+   </body>
+</html>

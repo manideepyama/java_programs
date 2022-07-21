@@ -1,0 +1,23 @@
+<html>
+   <head>
+       <title>SssiT</title>
+   </head>
+   <body bgcolor="green" text="white">
+        <h1 align="center"> 
+		SSSIT Computer Education </h1>
+
+ <embed src="ne.mp3" start="auto" hidden="True">
+
+		<marquee scrollamount="10" direction="left" behavior="alternate" loop="20" width="100%">
+		<h1 align=center>KPHB - Hyderabad </h1>
+		</marquee>
+
+		<hr size="5" color="white" width="100%" align="center">
+
+		<img src="n.jpg" width="300" height="200" border="10" alt="Sorry Unable to display">
+
+
+
+   </body>
+</html>
+

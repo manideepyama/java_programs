@@ -1,0 +1,25 @@
+<html>
+   <head>
+      <script>
+	      function myAdd(){
+		         x=F1.T1.value
+				 y=F1.T2.value
+				 s=parseInt(x)+parseInt(y)
+				 F1.TR.value=s
+			  }
+	  </script>
+   </head>
+   <body bgcolor=green text=white>
+   <form id="F1">
+      <h1 align=center> ADD Application </h1>
+	  <hr><br><br>
+	  <pre>
+	      <h2>
+		  Enter Val1 : <input type="text" id="T1">
+		  Enter Val2 : <input type="text" id="T2">
+		  Result      :<input type=text id="TR">
+		                   <input type="button" value="ADD" onClick="myAdd()">
+	  </pre>
+	 </form>
+   </body>
+</html>

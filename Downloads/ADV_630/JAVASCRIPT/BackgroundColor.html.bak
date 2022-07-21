@@ -1,0 +1,23 @@
+<html>
+   <body bgcolor=black text=white>
+      <h1 align=center> Application </h1>
+	  <hr><br><br>
+	  <pre>
+	      <h2> 
+		            Enter Fname : <input type=text id=FN onFocus="CY(this.id)" onBlur="CW(this.id)">
+		            Enter LName : <input type=text id=LN onFocus="CY(this.id)" onBlur="CW(this.id)">
+					Enter City : <input type=text id=CITY onFocus="CY(this.id)" onBlur="CW(this.id)">
+					<input type=submit value=register>
+	  </pre>
+   </body>
+      <head>
+	     <script type="text/javascript">
+		      function CY(x){
+document.getElementById(x).style.background="Yellow" }
+
+function CW(x){
+document.getElementById(x).style.background="white"
+}
+	     </script>
+   </head>
+</html>

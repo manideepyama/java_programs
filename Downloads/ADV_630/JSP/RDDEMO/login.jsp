@@ -1,0 +1,29 @@
+
+
+<body bgcolor=green text=white>
+<form action="process.jsp" method="post">
+    <h1 align=center>  Login Page </h1>
+	<hr><br><br>
+	    <table align=center>
+		   <tr>
+		   <td align=center>
+		      <%
+			     String status=request.getParameter("STATUS");
+				 if(status!=null)
+				 { out.print("<h2>"+status+"</h2>"); }
+			  %>
+			  </td>
+		   </tr>
+
+		   <tr><td>Username : </td>
+		          <td><input type="text" name="UN"></td></tr>
+	
+		   <tr><td>Password : </td>
+		          <td><input type="text" name="PW">
+				  </td></tr>
+		   
+		   <tr><td></td><td><input type="submit" value="Login"></td></tr>
+		</table>
+	</h1>
+	</form>
+</body>
