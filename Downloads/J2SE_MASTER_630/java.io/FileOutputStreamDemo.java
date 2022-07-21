@@ -1,0 +1,16 @@
+//FileOutputStream(String filename)
+import java.io.*;
+class FileOutputStreamDemo{
+	public static void main(String args[]){
+try{
+FileOutputStream fos=
+	      new FileOutputStream("Sample"); 
+fos.write(65); fos.write(66); fos.write(67);
+fos.close();
+System.out.println("File is Created "); 
+}
+catch(IOException fe)
+		{System.out.println
+	          ("Sorry Unable to continue"); }
+	}
+}

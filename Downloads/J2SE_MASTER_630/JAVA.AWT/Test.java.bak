@@ -1,0 +1,17 @@
+import java.awt.*;
+import java.awt.event.*;
+
+class Test{
+	Frame f;
+	
+	Test()
+	{ f=new Frame("Test"); 
+	  f.setVisible(true);
+	  f.setSize(400,300);
+	  f.setBackground(Color.GREEN); }
+
+	public static void main(String args[])
+	  { Test t=new Test(); }
+}
+
+

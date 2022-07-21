@@ -1,0 +1,22 @@
+class Testing{
+	public static void main(String args[]){
+		try{
+			int x=Integer.parseInt(args[0]);
+			int y=Integer.parseInt(args[1]);
+			     try{
+					 int z=x/y;
+			System.out.println("Result is : "+z); }
+               catch(ArithmeticException a)
+			      {System.out.println
+				       ("Sorry V R N D B zero "); }
+		}
+		catch(Exception e){
+			System.out.println
+				  ("Sorry unable to continue...");
+			System.out.println(e);
+			e.printStackTrace();
+		}
+	}
+}
+
+

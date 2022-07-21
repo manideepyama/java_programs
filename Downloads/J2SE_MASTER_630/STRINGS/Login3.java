@@ -1,0 +1,15 @@
+import java.lang.String;
+class Login3{
+	public static void main(String args[]){
+		String dfrmdb="SsSiT    ";
+//public String replace(old,new);
+   //       args[0].replace(" ","");  
+//public String trim();
+
+//String od=args[0].replace(" ","");
+if(args[0].replace(" ","").equalsIgnoreCase(dfrmdb.trim()))
+			System.out.println("Valid User");
+		else
+			System.out.println("Invalid User");  
+	}
+}

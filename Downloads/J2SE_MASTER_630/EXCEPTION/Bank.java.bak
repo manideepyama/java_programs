@@ -1,0 +1,24 @@
+//throw new <ExceptionClsName>([list of args])
+
+import java.util.Scanner;
+class Bank{
+	public static void main(String args[]){
+		Scanner s=new Scanner(System.in);
+		int acno;
+		System.out.println("Enter acno : ");
+		acno=s.nextInt();
+
+		if(acno>0)
+		    { System.out.println("Valid Acno : "+acno); }
+		else
+		   {
+			   try{
+			   throw new NumberFormatException(); }
+			   catch(NumberFormatException ne)
+			   { System.out.println
+				     ("From Catch Block ");
+			      System.out.println(ne);
+				  System.out.println("Invalid Acno  "); }
+		   }
+	}
+}

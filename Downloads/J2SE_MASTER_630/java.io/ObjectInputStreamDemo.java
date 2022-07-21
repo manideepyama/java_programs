@@ -1,0 +1,24 @@
+import java.io.*;
+class ObjectInputStreamDemo{
+	public static void main(String args[])
+		throws IOException,ClassNotFoundException{
+InputStream is=new FileInputStream("Myeinfo");
+
+//ObjectInputStream(InputStream);
+ObjectInputStream ois=
+	  new ObjectInputStream(is);
+ Object o = ois.readObject();
+
+//java.lang.Object 
+   //public Class getClass();
+
+System.out.println("ClassName : "+o.getClass());
+
+  Employee e=(Employee)o;
+  e.getEmployee();
+  ois.close();
+  is.close();
+	}
+}
+
+

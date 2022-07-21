@@ -1,0 +1,21 @@
+//BufferedReader(Rea der)
+   //public String readLine( ); 
+
+  import java.io.*;
+  class BufferedReaderDemo {
+	  public static void main(String args[])
+		  throws IOException,InterruptedException{
+FileReader fr=
+	new FileReader("e:\\adv_super\\html\\login.html");
+BufferedReader br=new BufferedReader(fr);
+String line=null; //local variable
+
+      while( (line=br.readLine())!=null )
+		  { System.out.println(line);
+	         Thread.sleep(500);
+	     }
+
+br.close();
+fr.close();
+	  }
+  }

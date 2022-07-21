@@ -1,0 +1,17 @@
+//FileReader(String filename) or
+//FileReader(File path)
+import java.io.*;
+class FileReaderDemo{
+	public static void main(String args[]){
+		try{
+	File f=new File("e:\\adv_super\\jsp\\hits\\hits.jsp");
+	FileReader fr=new FileReader(f);
+	int x;
+         	while( (x=fr.read() )!=-1 )
+		       	       {System.out.print((char)x);}
+			fr.close();
+		}
+		catch(IOException ioe)
+		{System.out.println("Unable to continue.."); }
+	}
+}

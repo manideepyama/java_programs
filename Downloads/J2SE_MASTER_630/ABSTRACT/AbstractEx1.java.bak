@@ -1,0 +1,13 @@
+abstract class SuperA{
+	void method1() //null body or non abstract mtd
+	{ }
+	abstract void method2();
+}
+class SubB extends SuperA{
+	void method2()
+	{ }
+}
+class AbstractEx1{
+	public static void main(String args[])
+	{ SuperA sa=new SuperA();	}
+}

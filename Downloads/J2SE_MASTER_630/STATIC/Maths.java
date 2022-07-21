@@ -1,0 +1,8 @@
+class Maths{
+	static int sq(int x)
+      	{ return (x*x); }
+
+	public static void main(String args[])
+	{ int r=sq(5); 
+	  System.out.println("Result : "+r); }
+}

@@ -1,0 +1,43 @@
+class Thread1 extends Thread{
+	int s; //instance field
+	public void run()
+	{  for(int i=1;i<=150;i++)
+		   {System.out.println("Thread1 ... : "+i); 
+	         s=s+i;
+		   }
+	}
+}
+class Thread2 extends Thread{
+	public void run()
+	{ for(int i=200;i<=250;i++)
+		{System.out.println("Thread2 ... : "+i);}
+	}
+}
+class Thread3 extends Thread{
+	Thread1 t1; //instance field it default val is null
+	Thread3(Thread1 t1)
+	{ this.t1=t1;}
+
+	public void run()
+	{  for(int i=400;i<=450;i++)
+		     { System.out.println("Thread3 ... :"+i);
+	           if (i==430)
+	           {
+				   try{ t1.join(); }
+				   catch(InterruptedException ie)
+				     { ie.printStackTrace();}
+				   System.out.println("sum .... : "+t1.s);
+	           }
+           }
+	}
+}
+class JoinDemo{
+	public static void main(String args[]){
+		Thread1 t1=new Thread1();
+		Thread2 t2=new Thread2();		        
+		Thread3 t3=new Thread3(t1);
+		            t1.start();
+					t2.start();
+					t3.start();
+	}
+}

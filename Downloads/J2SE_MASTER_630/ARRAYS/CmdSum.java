@@ -1,0 +1,34 @@
+//CmdSum.java
+class CmdSum {
+	public static void main(String args[]){
+		int x=Integer.parseInt(args[0]);
+		int y=Integer.parseInt(args[1]);
+		int s=x+y;
+		System.out.println("Sum is : "+s);
+	}
+}
+
+/* Wrapper Classes      Methods 
+=======================================
+java.lang
+java.lang.Comparable(i);
+
+Byte         public static byte parseByte(String);
+Short        public static short parseShort(String);
+Integer     public static int parseInt(String);
+Long       public static long parseLong(String);
+Float        public static float parseFloat(String);
+Double    public static 
+                     double parseDouble(String);
+Boolean 
+   public static boolean parseBoolean(String);  */
+
+
+
+
+
+
+
+
+
+

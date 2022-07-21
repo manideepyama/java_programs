@@ -1,0 +1,16 @@
+class SeetaThread implements Runnable
+{   public void run()
+	  { for(int i=1;i<=30;i++)
+		  {System.out.println("Seeta Thread ... : "+i); }
+	   }
+}
+class RunnableDemo{
+	public static void main(String args[]){
+		SeetaThread st=new SeetaThread();
+		Thread t=new Thread(st);
+		              t.start();
+
+		for(int i=40;i<=60;i++)
+		{ System.out.println("Main Thread ... "+i); }
+	}
+}

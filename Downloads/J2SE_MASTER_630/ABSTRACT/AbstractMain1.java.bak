@@ -1,0 +1,29 @@
+99666 05464 
+abstract class Shapes {
+	float dim1,dim2; //instance field
+	void setShapes(float d1,float d2)
+	{ dim1=d1; dim2=d2;  }
+
+	abstract float findArea();
+}
+class Rect extends Shapes{
+	float findArea()
+	{ return (dim1*dim2); }
+}
+class Triangle extends Shapes{
+	float findArea()
+	{return (0.5f*dim1*dim2); }
+}
+class AbstractMain{
+	public static void main(String args[]){
+		Shapes s=new Rect();
+		               s.setShapes(4.0f,4.0f);
+	   float ar=s.findArea();
+	   System.out.println("Area of Rect : "+ar);
+
+	                   s=new Triangle();
+					   s.setShapes(5.0f,5.0f);
+		float at= s.findArea();
+		System.out.println("Area of Triangle : "+at);
+	}
+}

@@ -1,0 +1,16 @@
+class A
+{
+	private A(){}
+	void method1()
+	{System.out.println("M1 of A "); }
+
+	public static void main(String args[])
+	{ A a=new A(); 
+	      a.method1();}
+}
+
+class B{
+	public static void main(String args[])
+	{ A a=new A(); 
+	   A a1=new A(); }
+}

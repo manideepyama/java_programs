@@ -1,0 +1,5 @@
+Syn:
+static {
+	statement(s);
+	..............
+}

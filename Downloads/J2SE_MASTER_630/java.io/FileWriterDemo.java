@@ -1,0 +1,18 @@
+//FileWriter(String) or FileWriter(File)
+import java.io.*;
+class FileWriterDemo{
+	public static void main(String args[]){
+		try(FileWriter fw=new FileWriter("Data")){
+			fw.write(65);  //unicode char "A"
+			fw.write("\n");
+			char[ ] x={'w','e','l','c','o','m','e'};
+			fw.write(x);
+			fw.write("\n");
+			String s="Have a nice Day";
+			fw.write(s);
+			System.out.println("Data is Saved ");
+		}
+		catch(IOException ioe)
+		{System.out.println("Unable to continue..."); }
+	}
+}

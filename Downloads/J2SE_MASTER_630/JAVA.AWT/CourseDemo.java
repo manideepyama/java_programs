@@ -1,0 +1,39 @@
+import java.awt.*;
+import java.awt.event.*;
+
+class CourseDemo implements ItemListener{
+	TextField tf; Frame f; Label lblf; 
+	Checkbox cp;
+   
+    CourseDemo()
+	{  f=new Frame("Course ");
+	   f.setVisible(true);
+	   f.setSize(200,200);
+	   f.setLayout(new FlowLayout());
+	   f.setBackground(Color.YELLOW);
+
+       cp=new Checkbox("Python                  ");
+	   cp.addItemListener(this);
+
+	   tf=new TextField(10);
+	   lblf=new Label("Fee");
+	   f.add(cp);
+	   f.add(lblf); f.add(tf);
+	   
+	  }
+	public static void main(String args[])
+	 { CourseDemo d=new CourseDemo(); }
+
+    public void itemStateChanged(ItemEvent a)
+	    {  int i=a.getStateChange();
+	        
+			//java.awt.event.ItemEvent
+			   //public int getStateChage()
+
+	       if(i==1)
+		          tf.setText("5000");
+		   else
+			      tf.setText("0");
+		}
+
+}

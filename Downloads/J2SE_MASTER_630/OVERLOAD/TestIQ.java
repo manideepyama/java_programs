@@ -1,0 +1,13 @@
+class TestIQ{
+	public int main(int x) //instance mtd
+	{  return x*x; }
+
+	public static void main(String args[])
+	{System.out.println("Hello Dear ");
+	  TestIQ t=new TestIQ( );
+	          int s=t.main(9); 
+		System.out.println("Result : "+s);}
+}
+
+
+

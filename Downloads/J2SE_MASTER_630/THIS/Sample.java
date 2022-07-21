@@ -1,0 +1,17 @@
+class Sample {
+	void method1()
+	{ System.out.println("M1 Hcode : "+this); }
+
+	void method2()
+	{System.out.println("M2 Hcode : "+this); }
+
+	public static void main(String args[])
+	{ Sample s=new Sample( ); 
+	  System.out.println("Main Hcode : "+s);  
+	         s.method1( ); 
+			 s.method2(); }
+}
+
+
+
+

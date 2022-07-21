@@ -1,0 +1,5 @@
+class A{  //CE
+	void method1()
+	{}
+	abstract void method2();
+}

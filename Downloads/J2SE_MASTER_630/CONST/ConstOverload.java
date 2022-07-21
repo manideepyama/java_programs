@@ -1,0 +1,24 @@
+class Circle{
+	float r,a;
+	Circle()
+		{ r=2.0f; }
+	
+	Circle(float r) 
+		{ this.r=r; }
+
+	float findArea( ){ 
+	    a=3.14f*r*r;
+		return a; }
+
+   public static void main(String args[])
+	  { Circle c=new Circle( ); 
+              float ac=c.findArea( ); 
+		System.out.println("Area of Circle : "+ac);
+
+		  Circle c1=new Circle(3.0f); 
+		       float ac2=c1.findArea(); 
+	System.out.println("Area of Circle : "+ac2);		
+	}
+}
+
+

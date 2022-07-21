@@ -1,0 +1,12 @@
+CharacterStream Classes 
+   Writer
+     public void write(int)
+	 public void write(char[ ])
+	 public void write(String)
+	 public void close()
+       FileWriter,BufferedWriter,PrintWriter
+
+   Reader
+     public int read( )
+	 public void close( )
+        FileReader,BufferedReader

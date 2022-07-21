@@ -1,0 +1,493 @@
+Ques: 5
+	public class Gen<T> {
+	private T object;
+	public Gen(T object) {
+	this.object=object;
+	}
+	public T getObject() {
+	return object;
+	}
+
+Ques: 6
+
+	list.add("foo"); - compilation fails
+	list=new ArrayList<String>(); - compiles
+	list=new ArrayList<Object>(); - compilation fails
+ 	String s=list.get(0); - compiles
+	Object o=list; - compiles
+
+Ques: 7
+
+	ArrayList<String> x1=new ArrayList<String>(); -- compiles
+	foo(x1); -- fails
+
+	ArrayList<Object> x2=new ArrayList<String>(); -- fails
+	foo(x2); -- fails
+
+	ArrayList<Object> x3=new ArrayList<Object>(); -- compiles
+	foo(x3); -- compiles
+
+	ArrayList x4=new ArrayList(); -- compiles
+	foo(x4); -- compiles
+
+Ques: 12
+
+	Alpha:foo  Beta:foo   Beta:bar    Beta:bar
+
+Ques: 15
+
+	enum Element
+	{
+	EARTH,WIND,FIRE{
+	public String info(){
+	return "Hot";
+	}
+	};
+	public String info()
+	{
+	return "element";
+	}
+	}
+
+
+Ques: 20
+
+	package com.sun.cert;
+	import java.util.*;
+	public class AddressBook
+
+Ques: 21
+
+	interface Reloadable
+	{
+	public void reload();
+	}
+
+	class Edit
+	{
+	public void Edit(){}
+	}
+
+	interface Displayable extends Reloadable
+	{
+	public void display();
+	}
+
+Ques: 37
+
+	for(int x : y)
+
+Ques: 42
+	
+	BufferedReader reader = new BufferedReader(new FileReader("in"));
+
+	PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("out")));
+
+Ques: 49
+
+	(temp=buffReader.readLine())!=null
+
+	(IOException e){
+
+
+Ques: 52
+
+	class A has name A
+
+	class B has name A
+
+Ques: 53
+
+	1. class A{List<B> b} -   car is vechile and car is a collectible
+	2.class A{} -   car has a steering wheel
+	3.class A{B b;}  - car has wheels
+	4.class A extends B,C{}  -  Mini is a car
+	5.class A{B b;C c;}  -  car is an object
+	6.class A implements B,C{}
+	7.class A extends B{}
+
+Ques: 87
+
+	3.14593
+
+	true
+
+
+Ques: 91
+
+	public boolean doesFileExist(String []dirs,String filename)
+	{
+	String path="";
+
+	for(String dir:dirs)
+	{
+
+	path=path+File.separator+dir;
+
+	}
+	System.out.println(path);
+	File file = new File(path,filename);
+	return file.exists();
+	}
+	}
+
+
+Ques: 105
+
+	package com.bar;
+
+	import com.foo.bar.blatz.*;
+
+	import com.foo.bar.*;
+
+
+Ques: 106
+
+	DONT KNOW
+
+Ques: 113
+
+	public class NumberNames{
+	  private HashMap<String,Integer> map= new HashMap<String,Integer>();
+             public void put(String name,int value){
+		map.put(name,value);
+              }
+              public String getNames() {
+                  return map.keySet()
+               }
+           }
+
+
+Ques: 123
+
+	public void bar(int x)()
+
+	public int bar(String x){ return 1;}
+
+	public void bar(int x,int y){}
+
+Ques: 124
+
+	same ques 21
+
+Ques: 139
+
+	Dog is a Animal
+
+	Forest has a Tree
+
+	Rectangle is a Square
+
+	Java Book is a programming Book
+
+
+Ques:  143
+
+	public class Single{
+            private static Single instance;
+	    public static Single getInstance() {
+              if(instance==null)instance=create();
+                  return instance;
+             }   
+  // next 2 line alone changes... ( instead of private protected and instead of protected static )
+           protected Single() { }  
+           static Single cerate() { return new Single(); }
+           }
+          class SingleSub extends Single {
+           }
+
+Ques: 147
+
+	started
+	ran
+	interrupting
+	ended
+	(no more output)
+
+Ques: 151
+
+	run() --->java.lang.Thread
+	wait() --->java.lang.Object
+	notify() --->java.lang.Object
+	sleep() --->java.lang.Thread
+	start() --->java.lang.Thread
+	join() --->java.lang.Thread
+
+
+
+
+Ques: 171
+
+	same ques 52
+
+Ques: 177
+
+	same ques 42
+
+Ques: 180
+
+	same ques 91
+
+Ques: 183
+
+	while(scanner.hasnext)
+	{
+	if(scanner.hasbooleannext)
+	{
+	s.o.p(scanner.nextboolean);
+	}
+	else
+	scanner.next;
+	}
+
+Ques: 187
+
+	public class myint implements comparable
+	public string toString()
+	public int compareTo(object o)
+	{
+	myint i2=(myint)o;
+	return i2.i-1;
+	}
+
+
+Ques: 188
+
+	java.util.Map   --------> defines the method : V get(Object key)
+
+	java.util.Set   --------> contains no pair of elements e1 and e2, such that e1.equals(e2)
+
+	java.util.List  --------> allows access to elements by their integer index
+	
+	java.util.Queue --------> is designed for holding elements prior to processing
+
+Ques: 191
+
+	public class GenericB< Pet extends T > {
+          public T foo;
+           public void setFoo ( T foo) {
+             this.foo=foo;
+            }
+           public T getFoo() {
+               return foo;
+           }
+         public static void main(String[] args) {
+           GenericB<Cat> bar = new GenericB< Cat> ();
+           bar.setFoo(new Cat());
+           Cat c= bar.getFoo();
+          }
+         }
+       interface Pet{ }
+
+       class Cat implements Pet { }
+
+
+Ques: 195
+
+	same ques 7
+
+Ques: 200
+
+	public int update(int quantity, int adjust){
+	quantity=quantity + adjust;
+	return quantity;
+
+	}
+
+	public void callUpdate(){
+
+	int quant=100;
+	quant=update(quant,320);
+	system.out.println("quant="+quant;)
+
+	}
+
+
+Ques: 217
+
+	same ques 123
+
+Ques : 220
+
+	public class Flags2 {
+	private boolean isReady = false;
+	public synchronized void produce(){
+	isReady = true;
+	notifyAll();
+	}
+	public synchronized void consume() {
+	while(!isReady) {
+	try {
+	wait();
+	}catch(Exception ex){}
+	}
+	isReady=false;
+	}
+	}
+
+
+Ques: 222
+
+	
+	same ques 147
+
+
+Ques: 223
+
+	t.join();
+	t.start();
+	doIt();
+
+
+Ques: 238
+
+	same as 6
+
+Ques: 243
+
+	public void takeList(ArrayList list){} -  compiles
+	public void tkeList(ArrayList<Animal> list){}    -   compilation fails
+	public void takeList(ArrayList<? extends Animal> list){} -   compiles
+	public void takeList(ArrayList<?> list){}   -  compiles
+	public void tkeList(ArrayList<Object> list){}   -   compilation fails
+
+
+Ques: 244
+
+ 	same ques 113 	
+
+
+Ques: 246
+
+	DONT KNOW
+
+Ques: 247
+
+	same ques 187
+
+Ques: 251
+
+	public class ReadFile{
+	public static void main(String argv[]){
+	try{
+	File x1 = new File("MyText.txt");
+	FileReader x2 = new FileReader(x1);
+	BufferedReader x4 = new BufferedReader(x2);
+	String x3 = null;
+	while((x3 = x4.readLine()) != null){
+	System.out.println(x3);
+	}x4.close();
+	}catch(Exception ex){
+	ex.printStackTrace();
+	}
+	}
+	}
+
+Ques: 287
+
+	package alpha;
+	public class Alpha{
+	private String alpha;
+	public Alpha(){this("A");}
+	protected Alpha(String a){alpha = a;}
+	}
+
+	package beta;
+	public class Beta extends alpha.Alpha{
+	public Beta(String a){super(a);}
+	}
+
+
+Ques: 288
+
+	same ques 139
+
+Ques: 290
+
+	same ques 53
+
+Ques: 305
+
+	same ques 287
+
+Ques: 308
+
+	public class Doubler {
+	public static int doubleMe(int h)
+	{
+	return h*2;
+
+	}
+
+	public class Holder {
+
+	int amount=10;
+	public void doubleAmount(){amount=Doubler.doubleMe(amount);}
+
+	public int getAmount(){return amount;}
+
+	}
+
+
+	
+Ques: 313
+
+	same ques 200
+
+Ques: 316
+
+
+	same ques 105
+
+Ques: 323
+
+
+	same ques 220
+
+Ques: 327
+
+	same ques 223
+
+Ques: 329
+
+	same ques 151
+
+Ques: 335
+
+	same ques 49
+
+Ques: 336
+
+	same ques 251
+
+Ques: 346
+
+	same ques 12
+
+Ques: 353
+
+	same ques 5
+
+Ques: 362
+
+	java.util.SortedSet->>>>>defines base methods for an ordered set..
+
+	java.util.Arrays->>>>>provide array manipulation utilities..
+
+	java.util.Iterator-->>>>>>defines methods for leniar access to a collection...
+
+
+	java.util.TreeSet->>>>> provide concrete implementaion of an ordered set..
+
+	java.util.Collection->>>>>defines base methods for all collection objects...
+
+
+
+
+
+
+
+
+
+183 187 223
+

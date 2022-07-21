@@ -1,0 +1,2 @@
+final abstract class A{
+}

@@ -1,0 +1,22 @@
+class Sample{
+	int x,y; //instance fields
+	void setData(int a,int b)
+	{ x=a; y=b; }
+
+	boolean compare(Sample o)
+	{ if(x==o.x  && y==o.y)
+		   return true; else return false; }
+ 
+	public static void main(String args[])
+	{ Sample s1=new Sample();
+	                  s1.setData(10,20);
+					  
+	   Sample s2=new Sample( );
+	                  s2.setData(110,220);
+	  if( s1.compare(s2) )
+		  System.out.println("Same");
+	  else
+		  System.out.println("Not Same ");
+    }
+}
+
